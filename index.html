@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shaik Rafi — Portfolio</title>
+
+  <!-- Google Fonts: one display face for headings, one body face for text -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="container navbar__inner">
+      <a href="#top" class="navbar__logo">Rafi</a>
+
+      <nav class="navbar__links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <!-- Simple hamburger button for small screens -->
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="top">
+    <div class="container hero__inner">
+      <div class="hero__text">
+        <p class="hero__kicker">B.Tech graduate, 2026</p>
+        <h1 class="hero__name">Shaik Rafi</h1>
+        <p class="hero__role">Python developer, learning to build things that see and understand images.</p>
+        <p class="hero__summary">
+          I like turning raw data into small working systems — a model that spots a
+          diseased leaf, or one that reads an expression on a face. Still early in my
+          career, still curious about everything.
+        </p>
+        <div class="hero__cta">
+          <a href="#projects" class="btn btn--primary">See my projects</a>
+          <a href="mailto:rafishaik2273@gmail.com" class="btn btn--ghost">Say hello</a>
+        </div>
+      </div>
+
+      <!-- Decorative leaf-vein line drawing, ties back to the plant disease project -->
+      <div class="hero__art" aria-hidden="true">
+        <svg viewBox="0 0 300 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M150 20 C 90 90, 60 180, 150 320 C 240 180, 210 90, 150 20 Z" stroke="var(--sage)" stroke-width="2"/>
+          <path d="M150 40 L150 300" stroke="var(--sage)" stroke-width="1.5"/>
+          <path d="M150 90 L100 60 M150 90 L200 60" stroke="var(--sage)" stroke-width="1.2"/>
+          <path d="M150 150 L85 110 M150 150 L215 110" stroke="var(--sage)" stroke-width="1.2"/>
+          <path d="M150 210 L90 170 M150 210 L210 170" stroke="var(--sage)" stroke-width="1.2"/>
+          <path d="M150 265 L105 235 M150 265 L195 235" stroke="var(--sage)" stroke-width="1.2"/>
+          <circle cx="150" cy="150" r="4" fill="var(--amber)"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about" id="about">
+    <div class="container about__inner">
+      <h2>About</h2>
+      <p>
+        I recently finished my B.Tech at QIS College of Engineering and Technology.
+        Along the way I picked up Python, worked through a couple of deep-learning
+        projects on my own, and completed a short internship in Python development.
+        Outside of code, I'm usually watching a film or playing something with friends.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills__grid">
+        <div class="skills__group">
+          <h3>Technical</h3>
+          <ul>
+            <li>Python</li>
+            <li>Deep learning basics (CNNs)</li>
+          </ul>
+        </div>
+        <div class="skills__group">
+          <h3>Tools</h3>
+          <ul>
+            <li>VS Code</li>
+            <li>Google Colab</li>
+          </ul>
+        </div>
+        <div class="skills__group">
+          <h3>Working with others</h3>
+          <ul>
+            <li>Communication</li>
+            <li>Teamwork</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+
+      <article class="project">
+        <div class="project__index">01</div>
+        <div class="project__body">
+          <h3>Plant Leaf Disease Detection</h3>
+          <p>
+            A system that identifies and classifies diseases from photos of plant
+            leaves. Built a Convolutional Neural Network and trained it on a labelled
+            set of healthy and diseased leaf images.
+          </p>
+          <p class="project__tags">Python · CNN · Image classification</p>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project__index">02</div>
+        <div class="project__body">
+          <h3>Smart Restaurant Rating via Facial Emotion Detection</h3>
+          <p>
+            An AI system that reads a customer's facial expression in real time and
+            turns it into an automated restaurant rating. Reached 97% accuracy on
+            the emotion-detection model.
+          </p>
+          <p class="project__tags">Python · Deep learning · Real-time detection</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION (chronological, so a timeline makes sense here) ===== -->
+  <section class="education" id="education">
+    <div class="container">
+      <h2>Education</h2>
+      <ul class="timeline">
+        <li>
+          <span class="timeline__year">2026</span>
+          <div>
+            <h3>B.Tech — QIS College of Engineering and Technology</h3>
+            <p>CGPA: 7.3</p>
+          </div>
+        </li>
+        <li>
+          <span class="timeline__year">2022</span>
+          <div>
+            <h3>Intermediate — Sri Chaitanya Junior College</h3>
+            <p>66%</p>
+          </div>
+        </li>
+        <li>
+          <span class="timeline__year">2020</span>
+          <div>
+            <h3>SSC — Apex High School</h3>
+            <p>93%</p>
+          </div>
+        </li>
+      </ul>
+
+      <div class="internship">
+        <h3>Internship</h3>
+        <p>Python Development — Programming internship</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact" id="contact">
+    <div class="container contact__inner">
+      <h2>Let's talk</h2>
+      <p>Based in Ongole, Prakasam, Andhra Pradesh. Open to opportunities in Python and ML.</p>
+      <div class="contact__links">
+        <a href="mailto:rafishaik2273@gmail.com">rafishaik2273@gmail.com</a>
+        <a href="tel:9705435581">9705435581</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Shaik Rafi</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
